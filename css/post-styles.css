@@ -1,0 +1,48 @@
+/* Post */
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+    grid-gap: 15px;
+}
+
+.post {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.post:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+}
+
+.post .post-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.post img.post-image {
+    width: 100%;
+}
+
+.post img.post-image:hover {
+    width: 100%;
+}
+
+.post .post-time {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    color: gray;
+    font-size: 90%;
+}
+
+.post .post-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
