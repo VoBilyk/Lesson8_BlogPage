@@ -4,11 +4,10 @@
 <head>
     <title>Blog Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/templateStyles.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/grid-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/post-styles.css">
     <link rel="stylesheet" type="text/css" href="css/header-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/aside-styles.css">
 </head>
 
 <body>
@@ -30,10 +29,10 @@
             <label for="hamburger-menu"><i class="menu-icon fa fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu" role="button" style="display: none">
             <div class="tabs">
-                <a href="#" title="Main1">Menu 1</a>
-                <a href="#" title="Main2">Menu 2</a>
-                <a href="#" title="Main3">Menu 3</a>
-                <a href="#" title="Main4">Menu 4</a>
+                <a href="#" title="Main1">Home</a>
+                <a href="#" title="Main2">About</a>
+                <a href="#" title="Main3">Contacts</a>
+                <a href="#" title="Main4" style="border-right: none">Feedback</a>
             </div>
         </div>
     </header>
@@ -43,7 +42,7 @@
             <div class="post">
                 <div class="post-title">Semantic Segmentation of Small Data using Keras</div>
                 <div class="post-time">July 9, 2018</div>
-                <img class="post-image" src="blog-content/post3.png" alt="photo">
+                <img class="post-image" src="images/post3.png" alt="photo">
                 <p>
                     Golf performance tracking startup Arccos joined forces with Commercial Software Engineering (CSE) developers in hopes of
                     unveiling new improvements to their "virtual caddie" this summer.
@@ -57,7 +56,7 @@
             <div class="post">
                 <div class="post-title">Deploying a Batch AI Cluster for Distributed Deep Learning</div>
                 <div class="post-time">July 9, 2018</div>
-                <img class="post-image" src="blog-content/post1.jpg" alt="photo">
+                <img class="post-image" src="images/post1.jpg" alt="photo">
                 <p>
                     Microsoft and Land O'Lakes partnered to develop an automated solution to identify sustainable farming practices given thousands
                     of satellite images of Iowan farms. Our primary goal was to reduce the reliance on manual interviewing of farmers
@@ -72,7 +71,7 @@
             <div class="post">
                 <div class="post-title">Satellite Images Segmentation and Sustainable Farming</div>
                 <div class="post-time">July 9, 2018</div>
-                <img class="post-image" src="blog-content/post2.jpg" alt="photo">
+                <img class="post-image" src="images/post2.jpg" alt="photo">
                 <p>
                     Can Machine Learning help with detecting sustainable farming practices? In this blog post inspired by our collaboration with
                     Land O'Lakes we share the lessons we learned in the image segmentation space.
@@ -86,7 +85,7 @@
             <div class="post">
                 <div class="post-title">Building a Private Ethereum Consortium</div>
                 <div class="post-time">July 9, 2018</div>
-                <img class="post-image" src="blog-content/post4.png" alt="photo">
+                <img class="post-image" src="images/post4.png" alt="photo">
                 <p>
                     Over the past two years, Microsoft and Webjet have collaborated to build a blockchain-based solution, Rezchain, to help travel
                     companies reduce payment disputes. In this code story, we’ll share the lessons learned in creating the Rezchain consortium.
@@ -102,7 +101,7 @@
             <div class="post">
                 <div class="post-title">Using Otsu’s method to generate data</div>
                 <div class="post-time">July 9, 2018</div>
-                <img class="post-image" src="blog-content/post5.png" alt="photo">
+                <img class="post-image" src="images/post5.png" alt="photo">
                 <p>
                     In this article, we introduce a technique to rapidly pre-label training data for image segmentation models such that annotators
                     no longer have to painstakingly hand-annotate every pixel of interest in an image. The approach is implemented in
@@ -116,17 +115,78 @@
             </div>
         </div>
     
-        <div class="aside-container" style="background: gainsboro">
-            Aside
-            <p>About</p>
-            <p>Contacts</p>
-            <p>Search</p>
-            <p>Tegs</p>
-            <p>Comments</p>
+        <div class="aside-container">
+            <div class="aside-wrapper">
+            <div>
+                <h2>About</h2>
+                <img class="logo" src="images/avatar.jpg" alt="avatar">
+                <h2>Volodymyr Bilyk</h2>
+                <p>Student of Binary Studio Academy, who write blog about last technical news. While doing hometask:)</p>
+                <hr>
+            </div>
+            <div>
+                <h2>Contacts</h2>
+                <a href="#" title="Facebook"><i class="icon fa fa-facebook"></i></a>
+                <a href="#" title="Telegram"><i class="icon fa fa-telegram"></i></a>
+                <a href="#" title="Instagram"><i class="icon fa fa-instagram"></i></a>
+                <a href="#" title="Twitter"><i class="icon fa fa-twitter"></i></a>
+                <a href="#" title="LinkeId"><i class="icon fa fa-linkedin"></i></a>
+                <hr>
+            </div>
+            <div>
+                <input type="text" placeholder="Your name..">
+                <input type="text" placeholder="Your email..">
+                <button>Subscribe</button>
+                <hr>
+            </div>
+
+            <div>
+                <h2>Search content</h2>
+                <div class="aside-search">
+                    <input type="search" id="search-aside">
+                    <button><i class="search-icon fa fa-search"></i></button>
+                </div>
+                <hr>
+            </div>
+
+            <div class="tags">
+                <h2>Tags</h2>
+                <a href="#">#tecnology</i></a>
+                <a href="#">#microsoft</i></a>
+                <a href="#">#html</i></a>
+                <a href="#">#css</i></a>
+                <a href="#">#windowsblog</i></a>
+                <a href="#">#opensv</i></a>
+                <a href="#">#deeplearning</i></a>
+                <a href="#">#samsung</i></a>
+                <a href="#">#ai</i></a>
+                <a href="#">#bitcoin</i></a>
+                <a href="#">#ocr</i></a>
+                <hr>
+            </div>
+
+            <div>
+                <h2>Last comments</h2>
+                <div class="comment">
+                    <img src="images/avatar-round-1.png">
+                    <div class="comment-body">
+                        <h4>Viktoria</h4>
+                        <span>It`s a very interested blog, so i would</span>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <img src="images/around-avatar-2.png">
+                    <div class="comment-body">
+                        <h4>Anriy</h4>
+                        <span>It`s a very interested blog, so i would</span>
+                    </div>
+                </div>
+            </div>
         </div>    
     </div>
-
+</div>
     <footer>
-
+        <p>Created by Volodymyr Bilyk ©</p>
     </footer>
 </body>

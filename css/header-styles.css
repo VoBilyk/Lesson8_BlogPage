@@ -3,7 +3,7 @@ header {
     grid-template: 'logo social-bar search-bar'
                     'nav nav nav';
     grid-template-columns: 1fr auto auto;
-    padding-bottom: 10px;
+    background-color: rgb(255, 246, 246);
 }
 
 .logo {
@@ -23,11 +23,10 @@ header {
     padding: 5px 10px;
     width: auto;
     border: none;
-    color: rgb(134, 133, 133);
+    color: rgb(80, 80, 80);
     font-size: 25px;
 }
 
-.social-bar 
 .icon:hover {
     opacity: 0.5;
 }
@@ -52,24 +51,19 @@ header {
     opacity: 0.5;
 }
 
-.navigation {
-    justify-self: right;
-    grid-area: nav;
-}
-
 .tabs {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(226, 226, 226);
 }
-
 .tabs 
 a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: white;
-    border: 1px solid white;
+    color: black;
+    font-size: 130%;
+    border-right: 1px solid rgb(160, 160, 160);
 }
 
 .tabs 
@@ -77,20 +71,34 @@ a:hover {
     background-color: rgb(196, 196, 196);
 }
 
-.navigation input[type=checkbox]:checked~.tabs {
+.navigation {
+    justify-self: right;
+    grid-area: nav;
+    padding-top: 5px;
+}
+
+
+.navigation 
+input[type=checkbox]:checked~.tabs {
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 1fr;
     z-index: 100;
 }
 
 .menu-icon {
-    padding: 5px 10px;
+    position: relative;
+    padding-left: 10px;
     width: auto;
     border: none;
     color: black;
     font-size: 30px;
     display: none;
 }
+
+.menu-icon:hover {
+    opacity: 0.5;
+}
+
 
 @media screen and (max-width:768px) {
     header {
@@ -108,6 +116,7 @@ a:hover {
 
     .navigation {
         justify-self: left;
+        
     }
 
     .menu-icon {
@@ -118,5 +127,13 @@ a:hover {
         display: none;
         position: absolute;
         left: 0;
+        top: 45px;
+        width: 100%;
+    }
+
+    .tabs a{
+        border-right: none;
+        border-bottom: solid 1px rgb(252, 252, 252);
+
     }
 }

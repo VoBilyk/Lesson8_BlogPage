@@ -1,9 +1,8 @@
-/* Post */
-
 .post-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
-    grid-gap: 15px;
+    padding-left: 10px;
+    grid-gap: 20px;
 }
 
 .post {
@@ -11,7 +10,8 @@
     display: grid;
     grid-template-rows: auto auto auto 1fr auto;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+    transition: 1s;
+    background-color: rgba(247, 237, 225, 0.459);
 }
 
 .post:hover {
@@ -19,13 +19,15 @@
     transform: scale(1.03);
 }
 
-.post .post-title {
+.post 
+.post-title {
     text-align: center;
     font-weight: bold;
     font-size: 120%;
 }
 
-.post img.post-image {
+.post 
+img.post-image {
     width: 100%;
 }
 
