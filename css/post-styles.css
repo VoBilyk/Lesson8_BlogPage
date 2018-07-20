@@ -29,10 +29,6 @@
     width: 100%;
 }
 
-.post img.post-image:hover {
-    width: 100%;
-}
-
 .post .post-time {
     padding: 5px;
     display: flex;

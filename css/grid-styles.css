@@ -12,6 +12,7 @@ body {
 /* Main Page */
 
 .body-container {
+    padding: 10px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 3fr 1fr;
