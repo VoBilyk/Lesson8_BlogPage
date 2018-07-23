@@ -3,6 +3,8 @@ header {
     grid-template: 'logo social-bar search-bar'
                     'nav nav nav';
     grid-template-columns: 1fr auto auto;
+    grid-gap: 20px;
+    padding: 10px 10px 0px 10px;
     background-color: rgb(255, 246, 246);
 }
 
@@ -13,6 +15,7 @@ header {
 
 .social-bar {
     display: grid;
+    grid-gap: 25px;
     align-self: start;
     grid-template-columns: repeat(5, auto);
     justify-self: right;
@@ -20,7 +23,6 @@ header {
 }
 
 .icon {
-    padding: 5px 10px;
     width: auto;
     border: none;
     color: rgb(80, 80, 80);
@@ -32,7 +34,6 @@ header {
 }
 
 .search-bar {
-    display: grid;
     align-self: start;
     justify-self: right;
     grid-area: search-bar;
@@ -40,7 +41,6 @@ header {
 
 .search-bar 
 .search-icon {
-    padding: 5px 10px;
     width: auto;
     border: none;
     color: black;
@@ -86,8 +86,6 @@ input[type=checkbox]:checked~.tabs {
 }
 
 .menu-icon {
-    position: relative;
-    padding-left: 10px;
     width: auto;
     border: none;
     color: black;
@@ -127,13 +125,12 @@ input[type=checkbox]:checked~.tabs {
         display: none;
         position: absolute;
         left: 0;
-        top: 45px;
+        top: 50px;
         width: 100%;
     }
 
     .tabs a{
         border-right: none;
         border-bottom: solid 1px rgb(252, 252, 252);
-
     }
 }

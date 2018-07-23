@@ -14,11 +14,6 @@
     background-color: rgba(247, 237, 225, 0.459);
 }
 
-.post:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    transform: scale(1.03);
-}
-
 .post 
 .post-title {
     text-align: center;
@@ -31,7 +26,14 @@ img.post-image {
     width: 100%;
 }
 
-.post .post-time {
+.post:hover 
+img.post-image {
+    transform: scale(1.03);
+    transition-duration: 0.7s;
+}
+
+.post 
+.post-time {
     padding: 5px;
     display: flex;
     justify-content: flex-end;
@@ -39,7 +41,8 @@ img.post-image {
     font-size: 90%;
 }
 
-.post .post-footer {
+.post 
+.post-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
